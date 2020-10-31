@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/7124960e-1faf-4071-a6c5-3f055e530e1a/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/henridupon",
+    "appService.deploySubpath": "."
+}
