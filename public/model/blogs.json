@@ -1,0 +1,12 @@
+{
+  "profiles": [
+    {
+      "blog_name": "First blog",
+      "text":
+        "This is a first blog example, \n this is random text",
+      "tags": "Development, Operations, Writing",
+      "image": "blog.jpg",
+      "id": "1"
+    }
+  ]
+}

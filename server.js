@@ -1,5 +1,6 @@
 const express = require("express");
-const people = require("./people.json");
+const people = require("./public/model/people.json");
+const blogs = require("./public/model/blogs.json");
 
 const app = express();
 
@@ -10,8 +11,9 @@ app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
   res.render("index", {
-    title: "Homepage",
-    people: people.profiles
+    title: "IT Blogs",
+    people: people.profiles,
+    blogs: blogs.profiles
   });
 });
 
@@ -23,6 +25,7 @@ app.get("/profile", (req, res) => {
   });
 });
 
+// Set the port. When this is not 8080, Azure will not show this but this could be adjusted with config
 const server = app.listen(8080, () => {
   console.log(`Express running → PORT ${server.address().port}`);
 });
