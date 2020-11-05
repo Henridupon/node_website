@@ -14,10 +14,22 @@ You can [access the tutorial here](https://freshman.tech/learn-node).
 
 ## Usage
 1. Run `npm start`
-2. Navigate to `localhost:7000`
+2. Navigate to `localhost:8080`
 
 ## Getting Help
 
 Need some help? Leave a comment on the tutorial — this repo is meant as a place to grab the finished code and isn't a support channel.
+
+## future implementations
+backbone.js
+require.js
+
+### testing
+mocka.js
+chi.js
+grunt.js
+cover.js
+
+
 
 
