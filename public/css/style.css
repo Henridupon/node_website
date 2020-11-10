@@ -131,3 +131,7 @@ img {
 img:hover {
   transform: scale(1.05);
 }
+
+h1 {
+    color: red;
+}
