@@ -3,18 +3,17 @@ head
         include ../../css/style.css
 
     body
-      div.nav
-          h1 IT Blogs
-      ul
-        li
-          a(href='/') Home
-        li
-          a(href='/profile?firstname=Henri') Profile
-        li
-          a(href='/blogs') Blogs
 
-      input.search(
-        type='text'
-        name='search'
-        placeholder='Enter a search term...'
-      )
+          div.header
+              h1.mainheader IT Blogs
+
+              div.topnav
+                  a(href='/') Home
+                  a(href='/profile?firstname=Henri') Profile
+                  a(href='/blogs') Blogs
+
+                  input.search(
+                    type='text'
+                    name='search'
+                    placeholder='Enter a search term...'
+                  )
