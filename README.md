@@ -33,7 +33,9 @@ cover.js
 
 
 # npm node mailer
+npm i nodemailer mailgen express
 
+https://expressjs.com/en/guide/using-middleware.html
 
 
 

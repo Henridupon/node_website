@@ -7,9 +7,10 @@ html {
 
 /* Body */
 body {
-    background-image: url("../images/white-background.jpg");
+    background-image: url("../images/gradient-white-blue-linear.svg");
     font-family: -apple-system,BlinkMacSystemFont,"Times New Roman",
     Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    background-attachment: fixed;
 }
 
 /* ------ Header ------ */
@@ -31,11 +32,13 @@ body {
 
 /* Homepage Container */
 .container {
-  width: 960px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+    display: inline-flex;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 /* Profile Card */
@@ -63,6 +66,7 @@ body {
 
 .blog-image:hover {
     filter: grayscale();
+
 }
 
 /* Profile Page */
@@ -73,9 +77,11 @@ body {
 }
 
 .profile-image {
-  height: 100%;
-  flex-grow: 1;
-  flex-basis: 50%;
+    height: 80%;
+    flex-grow: 1;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
 }
 
 .profile-details {
@@ -121,10 +127,14 @@ body {
 }
 
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    transition: all 0.4s;
 }
 
 img:hover {
@@ -151,12 +161,12 @@ img:hover {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  color: black;
+    color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  color: white;
+    color: white;
 }
 
 .image-bg {

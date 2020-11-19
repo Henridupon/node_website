@@ -1,6 +1,6 @@
 const express = require("express");
-const people = require("./public/model/people.json");
 const blogs = require("./public/model/blogs.json");
+const people = require("./public/model/people.json");
 
 const app = express();
 
@@ -11,30 +11,33 @@ app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
     res.render("index", {
-        title: "IT Blogs",
-        people: people.profiles,
-        blogs: blogs.profiles
+        title: "IT Blogs"
   });
 });
 
 app.get("/profile", (req, res) => {
     const person = people.profiles.find(p => p.firstname === req.query.firstname);
+    const blog = people.profiles.find(x => x.blog_name === req.query.firstname);
+
     res.render("profile", {
-        title: `About ${person.firstname} ${person.lastname}`,
         person
   });
 });
 
-app.get("/mongo", (req, res) => {
-    const person = people.profiles.find(p => p.firstname === req.query.firstname);
-    res.render("profile", {
-        title: `About ${person.firstname} ${person.lastname}`,
-        person
-  });
-});
+//app.get("/mongo", (req, res) => {
+//    const person = people.profiles.find(p => p.firstname === req.query.firstname);
+//    res.render("profile", {
+//        title: `About ${person.firstname} ${person.lastname}`,
+//        person
+//  });
+//});
 
-app.get('/blogs', function (req, res, html) {
+app.get('/blogs', function (req, res) {
     res.render(__dirname + '/views/blogs.pug');
+});
+
+app.get('/quiz', function (req, res) {
+    res.render(__dirname + '/views/quiz.pug');
 });
 
 
