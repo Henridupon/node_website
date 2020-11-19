@@ -9,9 +9,10 @@ app.set("view engine", "pug");
 // serve static files from the `public` folder
 app.use(express.static(__dirname + "/public"));
 
-app.get("/", (req, res) => {
-    res.render("index", {
-        title: "IT Blogs"
+app.get('/', (req, res) => {
+  res.render('index', {
+    title: 'Homepage',
+    people: people.profiles
   });
 });
 
@@ -33,7 +34,9 @@ app.get("/profile", (req, res) => {
 //});
 
 app.get('/blogs', function (req, res) {
-    res.render(__dirname + '/views/blogs.pug');
+    res.render(__dirname + '/views/blogs.pug', {
+            blogs: blogs.writings
+    });
 });
 
 app.get('/quiz', function (req, res) {

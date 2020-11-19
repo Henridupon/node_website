@@ -3,8 +3,8 @@ extends ../public/modules/routes/layout
 block content
   div.container
     each blog in blogs
-      div.blog
-        div.person-image(style=`background: url('/images/${blog.image}') top center
+      div.person
+        div.blogs-image(style=`background: url('/images/${blog.image}') top center
         no-repeat; background-size: cover;`)
         h2.blog-name
           | #{blog.blog_name}
