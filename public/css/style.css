@@ -62,21 +62,12 @@ body {
 /* blog page */
 
 .blogcontainer {
-    width: 800px;
+    width: 1000px;
     margin-left: 100px;
     margin-right: 100px;
     display: grid;
-    font-family: -apple-system,BlinkMacSystemFont,"Times New Roman",
-}
-
-h1.blogcontainer {
-    font-size: 50px
-    font-family: -apple-system,BlinkMacSystemFont,"Times New Roman",
-}
-a
-p.blogcontainer {
-    font-size: 50px
-    font-family: -apple-system,BlinkMacSystemFont,"Times New Roman",
+    font-family: -apple-system,BlinkMacSystemFont,"Times New Roman";
+    font-size: 18px;
 }
 
 .blog {
@@ -97,6 +88,8 @@ p.blogcontainer {
   display: flex;
   height: 100vh;
   width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Times New Roman";
+  font-size: 18px;
 }
 
 .profile-image {
@@ -173,7 +166,6 @@ img:hover {
 }
 
 /* ------ Navigation bar menu ------ */
-
 .topnav {
     position: absolute;
     right: 15px;
