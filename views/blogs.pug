@@ -1,10 +1,11 @@
 extends ../public/modules/routes/layout
 
 block content
-  div.container
+  div.blogcontainer
     each blog in blogs
-      div.person
-        div.blogs-image(style=`background: url('/images/${blog.image}') top center
-        no-repeat; background-size: cover;`)
-        h2.blog-name
-          | #{blog.blog_name}
+        h1.blog-name
+            | #{blog.blog_name}
+        each val, key in blog.text
+            |<a> #{JSON.stringify(val).slice(1, -1)} </a>
+
+
