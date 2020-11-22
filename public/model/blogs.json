@@ -7,7 +7,7 @@
             "Unlike many other people my first project was using a dependency manager called Gradle. Today Gradle has become quite popular in the developer community but is far less known that Maven. After starting a project at the Rabobank where Maven was the preferred dependency manager of choice I decided to see what the maven dependency lifecycle phases exactly do and what Maven has to offer.",
             "Maven is a software project management  tool which is works with a Project Object Model (POM). It is used for building and distributing artifacts which could be used by other projects. Maven has few options/cycles that can be used for these purposes and these combined are called the Maven lifecycle. In total there are 7 main cycles; validate, compile, test, package, verify, install, deploy.",
           {
-            "bulletlist": [
+            "array": [
               "Validate = validates if all the necessary information is available to build the project. For Maven to validate anything these validation steps should be specified by the user. ",
               "Compile = Compiles the code, so it will translate the code written in the specific "
           ]},

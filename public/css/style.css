@@ -62,8 +62,9 @@ body {
 /* blog page */
 
 .blogcontainer {
-    width: 100%;
-    margin: 0 auto;
+    width: 800px;
+    margin-left: 100px;
+    margin-right: 100px;
     display: grid;
     grid-gap: 20px;
     font-family: -apple-system,BlinkMacSystemFont,"Times New Roman",
@@ -73,7 +74,7 @@ h1.blogcontainer {
     font-size: 50px
     font-family: -apple-system,BlinkMacSystemFont,"Times New Roman",
 }
-
+a
 p.blogcontainer {
     font-size: 50px
     font-family: -apple-system,BlinkMacSystemFont,"Times New Roman",

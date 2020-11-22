@@ -48,7 +48,3 @@ app.get('/quiz', function (req, res) {
 const server = app.listen(8080, () => {
     console.log(`Express running → PORT ${server.address().port}`);
 });
-
-function isArray(what) {
-    return Object.prototype.toString.call(what) === '[object Array]';
-}

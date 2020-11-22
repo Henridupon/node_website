@@ -1,11 +1,13 @@
 extends ../public/modules/routes/layout
 
 block content
-  div.blogcontainer
-    each blog in blogs
-        h1.blog-name
-            | #{blog.blog_name}
-        each val, key in blog.text
-            |<a> #{JSON.stringify(val).slice(1, -1)} </a>
+    div.blogcontainer
+        include:markdown-it ../public/modules/markdown/maven_lifecycle.md
+
+
+
+
+
+
 
 
