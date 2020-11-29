@@ -43,7 +43,6 @@ app.get('/quiz', function (req, res) {
     res.render(__dirname + '/views/quiz.pug');
 });
 
-
 // Set the port. When this is not 8080, Azure will not show this but this could be adjusted with config
 const server = app.listen(8080, () => {
     console.log(`Express running → PORT ${server.address().port}`);
